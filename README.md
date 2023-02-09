@@ -75,3 +75,27 @@ The app will have a user-friendly interface that allows the user to view and int
     Analytics Engine: This component performs various analytics on the stored journal entries to provide the user with personalized insights and recommendations.
 
 These components work together to provide the user with a comprehensive and efficient journaling experience. Data flows from the audio input component to the speech recognition engine, then to the NLP processing component, and finally to the storage component, where it is stored for future access and analysis. The user interface component provides the user with access to their journal entries, while the analytics engine provides valuable insights and recommendations.
+
+
+
+Here is a text-based architectural diagram for the daily journal recorder app:
+
+sql
+
++----------------+                                 +----------------+
+|  Audio Input   |                                 | NLP Processing |
++----------------+                                 +----------------+
+       |                                                      |
+       |                                                      |
+       v                                                      v
++----------------+                                 +----------------+
+| Speech Recognition Engine |             | Storage Component |
++----------------+                                 +----------------+
+       |                                                      |
+       |                                                      |
+       v                                                      v
++----------------+                                 +----------------+
+| User Interface Component |  <---+---  | Analytics Engine |
++----------------+                                 +----------------+
+
+This diagram represents the various components and their relationships in the daily journal recorder app. The audio input component captures the user's audio journal entry and sends it to the speech recognition engine. The speech recognition engine uses speech recognition technology to transcribe the audio into text and detect the starting and ending statements. The transcribed text is then sent to the NLP processing component, which performs various NLP techniques such as summarization, topic modeling, and sentiment analysis. The processed journal entries are then stored in the storage component for future access and analysis. The user interface component provides the user with a graphical interface to view and interact with their journal entries. The analytics engine performs various analytics on the stored journal entries to provide the user with personalized insights and recommendations.
